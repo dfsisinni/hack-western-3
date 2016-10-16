@@ -7,6 +7,17 @@ public class Course {
     private String name;
     private String description;
 
+    public String getDescription () {
+        return this.description;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     public Course () {
         code = null;
@@ -18,6 +29,10 @@ public class Course {
         this.code = code;
         this.name = name;
         this.description = description;
+    }
+
+    public void print () {
+        System.out.println(code + " " + name + " - " + description);
     }
 
 
